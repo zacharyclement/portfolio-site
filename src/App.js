@@ -5,25 +5,36 @@ import {
   Route,
   Switch,
   Link,
+  NavLink,
 } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 import ProjectsList from './components/ProjectsList';
 import ProjectDetail from './components/ProjectDetail';
+import About from './components/About';
 
 
 const App = () => (
   <Router>
     <div className="App">
-      <header className="App-header">
-        <Link to="/">
-          <img src={logo} className="App-logo" alt="logo" />
-        </Link>
-        <p className="App-title">ZC</p>
+      <header>
+        <div><NavLink to="/"><img src={logo} className="App-logo" alt="logo" /></NavLink></div>
+        <nav className="App-nav">
+          <ul className="header-links">
+            <li><NavLink to="/About">About</NavLink></li>
+            <li><NavLink to="zacharyclement.blogspot.com/">Blog</NavLink></li>
+          </ul>
+
+          <div>
+            <Route path="/About" component={About} />
+          </div>
+
+        </nav>
       </header>
+
       <Switch>
         <Route exact path="/" component={ProjectsList} />
-        <Route path="/:id" component={Test} />
+        <Route path="/:id" component={ProjectDetail} />
       </Switch>
     </div>
   </Router>
@@ -31,11 +42,3 @@ const App = () => (
 
 
 export default App;
-
-const Test = ({ match }) => (
-  <div>
-    <h1>{match.params.id}</h1>
-    <p>hello</p>
-    <p>{match.params.title}</p>
-  </div>
-);

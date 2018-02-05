@@ -3,7 +3,7 @@ import '../App.css';
 import App from '../App';
 import projects from '../data';
 
-const Test = ({ match }) => (
+const ProjectDetail = ({ match }) => (
   <div>
     <h1>{match.params.id}</h1>
     <p>hello</p>
@@ -11,4 +11,4 @@ const Test = ({ match }) => (
   </div>
 );
 
-export default Test;
+export default ProjectDetail;
