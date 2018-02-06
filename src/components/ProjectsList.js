@@ -11,7 +11,7 @@ const ProjectsList = () => (
     <div className="grid">
       <img src={olympic1} className="cover-image" alt=" " />
       <main>
-        <h1>I am Zach</h1>
+        <h1>Hi, I'm Zach</h1>
         <p>check out the things I make</p>
       </main>
     </div>
