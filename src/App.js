@@ -22,12 +22,8 @@ const App = () => (
         <nav className="App-nav">
           <ul className="header-links">
             <li><NavLink to="/About">About</NavLink></li>
-            <li><NavLink to="zacharyclement.blogspot.com/">Blog</NavLink></li>
+            <li>Blog</li>
           </ul>
-
-          <div>
-            <Route path="/About" component={About} />
-          </div>
 
         </nav>
       </header>
@@ -35,6 +31,7 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={ProjectsList} />
         <Route path="/:id" component={ProjectDetail} />
+        <Route path="/About" component={About} />
       </Switch>
     </div>
   </Router>

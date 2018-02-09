@@ -16,7 +16,6 @@ const ProjectsList = () => (
       </main>
     </div>
     <div className="project-list">{projects.map(project => <Project key={project.id} project={project} />)}</div>
-
   </div>
 );
 
