@@ -117,12 +117,6 @@ main {
   to { transform: rotateY(360deg); }
 }
 
-
-.downArrow{
-	position: fixed;
-	bottom: 45%;
-	left: 50%;
-}
 .bounce {
 	-moz-animation: bounce 3s infinite;
 	-webkit-animation: bounce 3s infinite;
