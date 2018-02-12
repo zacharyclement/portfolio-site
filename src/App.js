@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 // Replace BrowserRouter with HashRouter to work on gitpages
 import {
   HashRouter as Router,
@@ -7,13 +7,12 @@ import {
   Link,
   NavLink,
 } from 'react-router-dom';
+import scrollToComponent from 'react-scroll-to-component';
 import logo from './logo.svg';
 import './App.css';
 import ProjectsList from './components/ProjectsList';
 import ProjectDetail from './components/ProjectDetail';
 import About from './components/About';
-import scrollToComponent from 'react-scroll-to-component';
-import StickyHeader from 'react-sticky-header';
 
 
 const App = () => (

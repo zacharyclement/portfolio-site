@@ -1,17 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import scrollToComponent from 'react-scroll-to-component';
 import { Parallax } from 'react-parallax';
 import Project from './Project';
 import '../App.css';
 import projects from '../data';
 import scrollButton from '../images/downArrowBlack.svg';
+import BackgroundImage from '../images/background0.jpg';
 
-const BackgroundImage = 'https://ak9.picdn.net/shutterstock/videos/6968029/thumb/1.jpg?i10c=img.resize(height:160)';
+// const BackgroundImage = 'https://ak9.picdn.net/shutterstock/videos/6968029/thumb/1.jpg?i10c=img.resize(height:160)';
 const buttonStyle = {
   background: 'none', padding: 20, position: 'absolute', top: '80%', left: '50%', transform: 'translate(-50%,-50%)', width: '40px',
 };
 const backgroundImageStyle = {
-  display: 'grid', objectFit: 'cover', gridArea: '1/1/-1/-1', height: '100vh', objectPosition: '', width: '100%',
+  display: 'grid', objectFit: 'cover', gridArea: '1/1/-1/-1', height: '100vh',
 };
 
 const ProjectsList = () => (
@@ -25,7 +26,7 @@ const ProjectsList = () => (
       blur={-5}
     >
       <div style={backgroundImageStyle}>
-        <input type="image" src={scrollButton} style={buttonStyle} onClick={() => scrollToComponent(this.scrollArea, { offset: 1 })} />
+        <input type="image" src={scrollButton} className="bounce" style={buttonStyle} onClick={() => scrollToComponent(this.scrollArea, { offset: 1 })} />
       </div>
 
     </Parallax>

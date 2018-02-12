@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import Overdrive from 'react-overdrive';
 import '../App.css';
 import projects from '../data';
-import Overdrive from 'react-overdrive';
 
 
 class ProjectDetail extends Component {
