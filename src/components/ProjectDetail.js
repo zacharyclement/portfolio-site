@@ -5,8 +5,6 @@ import projects from '../data';
 import Overdrive from 'react-overdrive';
 
 
-const Test = 'Test';
-
 class ProjectDetail extends Component {
   componentWillMount() {
     this.myFunction();
@@ -47,14 +45,3 @@ class ProjectDetail extends Component {
 }
 
 export default ProjectDetail;
-
-
-// const ProjectDetail = ({ match }) => (
-
-//  <div>
-//    <h1>{match.params.id}</h1>
-//    <p>{console.log(projects[0][`${match.params.id}`])}</p>
-//    <p>{console.log('hello')}</p>
-//
-//  </div>
-// );

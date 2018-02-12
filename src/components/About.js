@@ -1,23 +1,15 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import '../App.css';
 
-class About extends Component {
-  render() {
-    return (
-      <div>
-        <h2>About</h2>
-        <p>Mauris sem velit, vehicula eget sodales vitae,
+
+const About = () => (
+  <div>
+    <h2>About</h2>
+    <p>Mauris sem velit, vehicula eget sodales vitae,
         rhoncus eget sapien:
-        </p>
-        <ol>
-          <li>Nulla pulvinar diam</li>
-          <li>Facilisis bibendum</li>
-          <li>Vestibulum vulputate</li>
-          <li>Eget erat</li>
-          <li>Id porttitor</li>
-        </ol>
-      </div>
-    );
-  }
-}
+      </p>
+  </div>
+);
 
 export default About;
