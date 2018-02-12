@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import '../App.css';
 import Tilt from 'react-tilt';
 import Overdrive from 'react-overdrive';
+import '../App.css';
 
 
 const Project = ({ project }) => (

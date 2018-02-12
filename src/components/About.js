@@ -8,7 +8,7 @@ const About = () => (
     <h2>About</h2>
     <p>Mauris sem velit, vehicula eget sodales vitae,
         rhoncus eget sapien:
-      </p>
+    </p>
   </div>
 );
 

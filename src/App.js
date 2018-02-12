@@ -22,15 +22,14 @@ const App = () => (
     <div className="App">
       <header>
         <div><NavLink to="/"><img src={logo} className="App-logo" alt="logo" /></NavLink></div>
-        <div>
-          <nav className="App-nav">
-            <ul className="header-links">
-              <li onClick={() => scrollToComponent(this.scrollArea, { offset: 300 })}>Projects</li>
-              <li><NavLink to="/About">About</NavLink></li>
-              <li><Link to="/Blog">Blog</Link></li>
-            </ul>
-          </nav>
-        </div>
+
+        <nav className="App-nav">
+          <ul className="header-links">
+            <li><a href="#" onClick={() => scrollToComponent(this.scrollArea, { offset: 300 })}>Projects</a></li>
+            <li><NavLink to="/About">About</NavLink></li>
+            <li><Link to="/Blog">Blog</Link></li>
+          </ul>
+        </nav>
       </header>
 
 

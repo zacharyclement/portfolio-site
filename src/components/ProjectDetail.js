@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../App.css';
-import App from '../App';
 import projects from '../data';
 import Overdrive from 'react-overdrive';
 

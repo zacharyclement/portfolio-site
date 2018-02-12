@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-import Project from './Project';
-import ProjectDetail from './ProjectDetail';
-import '../App.css';
-import olympic3 from '../images/olympic3.jpg';
-import projects from '../data';
 import scrollToComponent from 'react-scroll-to-component';
-import { Parallax, Background } from 'react-parallax';
-import styled from 'styled-components';
+import { Parallax } from 'react-parallax';
+import Project from './Project';
+import '../App.css';
+import projects from '../data';
 import scrollButton from '../images/downArrowBlack.svg';
 
 const BackgroundImage = 'https://static.pexels.com/photos/547114/pexels-photo-547114.jpeg';
@@ -28,8 +25,7 @@ const ProjectsList = () => (
       blur={-5}
     >
       <div style={backgroundImageStyle}>
-        <img src={scrollButton} style={buttonStyle} onClick={() => scrollToComponent(this.scrollArea, { offset: 1 })} />
-
+        <input type="image" src={scrollButton} style={buttonStyle} onClick={() => scrollToComponent(this.scrollArea, { offset: 1 })} />
 
       </div>
 
@@ -41,10 +37,5 @@ const ProjectsList = () => (
 
   </div>
 );
-
-const coverPage = styled.div`
-  height: 200px;
-`;
-
 
 export default ProjectsList;
